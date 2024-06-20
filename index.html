@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela de Contatos</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./main.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Tabela de Contatos</h1>
+        </header>
+        <form id="form-agenda">
+            <input type="text" id="nome" required placeholder="Nome" />
+            <input type="tel" id="tel" required placeholder="Telefone" pattern="\d{2}\d{9}" maxlength="11" title="Digite um número de telefone válido no formato DD + 9 números"/>
+            <button type="submit">Cadastrar</button>
+        </form>
+        <table cellspacing="0">
+            <head>
+                <tr>
+                    <th>
+                        Nome
+                    </th>
+                    <th>
+                        Telefone
+                    </th>
+                </tr>
+            </head>
+            <tbody>
+
+        </table>
+    </div>
+    <script src="./main.js"></script>
+</body>
+</html>
